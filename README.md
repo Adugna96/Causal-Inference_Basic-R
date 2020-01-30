@@ -46,15 +46,15 @@ At the end of the process, you as the recipient of two reviews have the chance t
 
 To make sure that the peer review process works smoothly, it is extremely important that you comply with the submission deadlines. They are as follows:
 
-0. The new assignment will published every Tuesday until 1pm.
+1. The new assignment will be published every Tuesday until 1pm.
 
-1. Submit your solutions by committing the modified Rmd file as well as the knitted HTML file to GitHub until Sunday, 11:59pm. For each hour the assignment is turned in late, the grade will be reduced by 10% (e.g. submission two hours after the deadline would result in 20% grade deduction).
+2. Submit your solutions by committing the modified Rmd file as well as the knitted HTML file to GitHub until Sunday, 11:59pm. For each hour the assignment is turned in late, the grade will be reduced by 10% (e.g. submission two hours after the deadline would result in 20% grade deduction).
 
-2. You will be assigned (anonymous) solutions from two of your peers for review every Monday until 1pm. At the same time, the solutions will be posted online as a guideline for the review. 
+3. You will be assigned (anonymous) solutions from two of your peers for review every Monday until 1pm. At the same time, the solutions will be posted online as a guideline for the review. 
 
-3. Submit your (anonymous) review feedback sheets until Tuesday, 11:59pm. 
+4. Submit your (anonymous) review feedback sheets until Tuesday, 11:59pm. 
 
-4. Consult the feedback you received and submit the review rating sheets until Sunday, 11:59pm.
+5. Consult the feedback you received and submit the review rating sheets until Sunday, 11:59pm.
 
 
 ## Coding Style
