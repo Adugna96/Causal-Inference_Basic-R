@@ -32,7 +32,7 @@ Please make use of the template Rmd files in the aut folders in your repository 
 At the end of the process, you as the recipient of two reviews have the chance to rate the feedback from the reviewers along two dimensions: accuracy and helpfulness. To do so, please make use of the rating form `assignment-X-author-rating.Rmd`(X to be replaced with assignment number) and score the reviews on scales.
 
 
-## Guidelines for Grading and Feedback
+## Guidelines for Scoring and Feedback
 
 1. Try always to be constructive and professional in the assessment of you colleagues' work. There is no need to be rude. Be respectful and considerate of the writer's feelings.
 2. Try not to overwhelm your peer with too much commentary.  
@@ -40,7 +40,7 @@ At the end of the process, you as the recipient of two reviews have the chance t
 4. Scoring rules: (a) You are allowed to give fractional points (0, .25, .5, .75, 1) for individual subtasks. (b) In the feedback form, you provide total scores for each task. (c) Typos or grammatical errors are not subject to grading. (d) When output is requested in the task (e.g., an average value or an estimate), this output has to be visible in the knitted HTML. Just prodiving the code that generates this output is not enough. In such cases, reduce the score on the subtask by at least 50%.
 5. Reread your feedback before submission. Make sure all your comments make sense and are easy to follow.
 6. The peer review will be anonymous in both directions. Authors will not see how reviewed them and vice versa. This means that you are not supposed to write your name or other identifying information on any of the forms. Please note that, of course, the process is not anonymous for the instructors, who will have the final say on the scores.
-7. 
+
 
 ## Timeline and Deadlines
 
