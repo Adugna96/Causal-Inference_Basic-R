@@ -19,21 +19,19 @@ x <- c(34, 56, 55, 87, NA, 4, 77, NA, 21, NA, 39)
 a)  What's the mean of all values? [1 point]
 
 ```{r}
-mean(x, na.rm = T)
+# ENTER YOUR CODE HERE
 ```
 
 b) And what's the median? What about the variance and the standard deviation? [1 point]
 
 ```{r}
-median(x, na.rm = T)
-var(x, na.rm = T)
-sd(x, na.rm = T)
+# ENTER YOUR CODE HERE
 ```
 
 c) Compute the sum of all values. [1 point]
 
 ```{r}
-sum(x, na.rm = T)
+# ENTER YOUR CODE HERE
 ```
 
 <br>
@@ -52,25 +50,25 @@ friends <- c("Homer", "Marge", "Bart", "Lisa", "Maggie")
 a) Get the length of the vector. [1 point]
 
 ```{r}
-length(friends)
+# ENTER YOUR CODE HERE
 ```
 
 b) Extract the first two friends of the vector. [1 point]
 
 ```{r}
-friends[1:2]
+# ENTER YOUR CODE HERE
 ```
 
 c) Extract the second and the last observation from the vector. [1 point]
 
 ```{r}
-c(friends[2],friends[5])
+# ENTER YOUR CODE HERE
 ```
 
 d) Sort your friends by their names in reverse alphabetic order. [1 point]
 
 ```{r}
-stringr::str_sort(friends, decreasing = T)
+# ENTER YOUR CODE HERE
 ```
 
 
@@ -83,31 +81,31 @@ stringr::str_sort(friends, decreasing = T)
 a) Load the dataset `immigration-ellis.tsv` into R, which contains data on immigration to Ellis Island (1918-1922) by trip. [1 point]
 
 ```{r}
-ellis <- readr::read_tsv( "immigration-ellis.tsv")
+# ENTER YOUR CODE HERE
 ```
 
 b) What is the total number of immigration cases in the dataset? [1 point]
 
 ```{r}
-sum(ellis$Count, na.rm = T) 
+# ENTER YOUR CODE HERE
 ```
 
 c) From where did the ship with the most immigrants arrive? [1 point]
 
 ```{r}
-ellis %>% group_by(Port) %>% summarize(n = n()) %>% arrange(desc(n))
+# ENTER YOUR CODE HERE
 ```
 
 d) How many unique ships (according to the name) are in the dataset? [1 point]
 
 ```{r}
-n_distinct(ellis$Ship)
+# ENTER YOUR CODE HERE
 ```
 
 e) Find out the name of the package from the tidyverse that makes working with date and times data easier, and report it below! [1 point]
 
 <div style="color:blue">
-Lubridate
+ENTER YOUR ANSWER HERE.
 </div>
 
 
