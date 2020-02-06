@@ -189,15 +189,20 @@ summary {
 <ol style="list-style-type: lower-alpha">
 <li>What’s the mean of all values? [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>mean(x,na.rm = T)</code></pre>
+<pre><code>## [1] 46.625</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
 <li>And what’s the median? What about the variance and the standard deviation? [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>median(x,na.rm = T)</code></pre>
+<pre><code>## [1] 47</code></pre>
+<pre class="r"><code>var &lt;- var(x,na.rm = T)
+SD &lt;- sqrt(var)</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
 <li>Compute the sum of all values. [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>sum(x,na.rm = T)</code></pre>
+<pre><code>## [1] 373</code></pre>
 <p><br></p>
 <p>========================================================</p>
 </div>
@@ -208,19 +213,23 @@ summary {
 <ol style="list-style-type: lower-alpha">
 <li>Get the length of the vector. [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>length(friends)</code></pre>
+<pre><code>## [1] 5</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
 <li>Extract the first two friends of the vector. [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>friends[c(1:2)]</code></pre>
+<pre><code>## [1] &quot;Homer&quot; &quot;Marge&quot;</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
 <li>Extract the second and the last observation from the vector. [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>friends[c(2,5)]</code></pre>
+<pre><code>## [1] &quot;Marge&quot;  &quot;Maggie&quot;</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
 <li>Sort your friends by their names in reverse alphabetic order. [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>sort(friends,decreasing = T)</code></pre>
+<pre><code>## [1] &quot;Marge&quot;  &quot;Maggie&quot; &quot;Lisa&quot;   &quot;Homer&quot;  &quot;Bart&quot;</code></pre>
 <p><br></p>
 <p>========================================================</p>
 </div>
@@ -229,24 +238,23 @@ summary {
 <ol style="list-style-type: lower-alpha">
 <li>Load the dataset <code>immigration-ellis.tsv</code> into R, which contains data on immigration to Ellis Island (1918-1922) by trip. [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>immigration.ellis &lt;- read.delim(&quot;C:/Users/user/Desktop/R lab/Stat-II/W1-Installing Gtub and Rmarck/LAB- ii/immigration-ellis.tsv&quot;)</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
 <li>What is the total number of immigration cases in the dataset? [1 point]</li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>length(immigration.ellis$Count)</code></pre>
+<pre><code>## [1] 40798</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
-<li>From where did the ship with the most immigrants arrive? [1 point]</li>
+<li><p>From where did the ship with the most immigrants arrive? [1 point]</p></li>
+<li><p>How many unique ships (according to the name) are in the dataset? [1 point]</p></li>
 </ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
-<ol start="4" style="list-style-type: lower-alpha">
-<li>How many unique ships (according to the name) are in the dataset? [1 point]</li>
-</ol>
-<pre class="r"><code># ENTER YOUR CODE HERE</code></pre>
+<pre class="r"><code>length(unique(immigration.ellis$Ship))</code></pre>
+<pre><code>## [1] 5621</code></pre>
 <ol start="5" style="list-style-type: lower-alpha">
 <li>Find out the name of the package from the tidyverse that makes working with date and times data easier, and report it below! [1 point]</li>
 </ol>
 <div style="color:blue">
-<p>ENTER YOUR ANSWER HERE.</p>
+<p>lubridate’ package</p>
 </div>
 </div>
 </div>
