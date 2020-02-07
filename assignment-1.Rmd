@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 Assignment 1
 ========================================================
 
@@ -6,6 +11,10 @@ Assignment 1
 
 
 Consider the following numeric vector.
+```{r}
+library(tidyverse)
+```
+
 
 ```{r}
 x <- c(34, 56, 55, 87, NA, 4, 77, NA, 21, NA, 39)
@@ -21,6 +30,9 @@ b) And what's the median? What about the variance and the standard deviation? [1
 
 ```{r}
 median(x,na.rm=T)
+var(x, na.rm = T)
+SD <- sqrt(var(x, na.rm = T))
+SD
 ```
 
 c) Compute the sum of all values. [1 point]
@@ -57,7 +69,7 @@ friends[1:2]
 c) Extract the second and the last observation from the vector. [1 point]
 
 ```{r}
-friends[c(2:5)]
+friends[c(2,5)]
 ```
 
 d) Sort your friends by their names in reverse alphabetic order. [1 point]
