@@ -2,11 +2,6 @@ Assignment 1
 ========================================================
 
 
-```{r}
-library(tidyverse)
-```
-
-
 ### Task 1 - Dealing with a numeric vector [3 points in total]
 
 
@@ -19,19 +14,19 @@ x <- c(34, 56, 55, 87, NA, 4, 77, NA, 21, NA, 39)
 a)  What's the mean of all values? [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+mean(x,na.rm = T)
 ```
 
 b) And what's the median? What about the variance and the standard deviation? [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+median(x,na.rm=T)
 ```
 
 c) Compute the sum of all values. [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+sum(x,na.rm = T)
 ```
 
 <br>
@@ -50,25 +45,25 @@ friends <- c("Homer", "Marge", "Bart", "Lisa", "Maggie")
 a) Get the length of the vector. [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+length(friends)
 ```
 
 b) Extract the first two friends of the vector. [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+friends[1:2]
 ```
 
 c) Extract the second and the last observation from the vector. [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+friends[c(2:5)]
 ```
 
 d) Sort your friends by their names in reverse alphabetic order. [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+sort(friends, decreasing=T)
 ```
 
 
@@ -81,31 +76,32 @@ d) Sort your friends by their names in reverse alphabetic order. [1 point]
 a) Load the dataset `immigration-ellis.tsv` into R, which contains data on immigration to Ellis Island (1918-1922) by trip. [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+immigration_ellis <- read.delim(file='immigration-ellis.tsv')
 ```
 
 b) What is the total number of immigration cases in the dataset? [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+length(immigration_ellis$Count)
 ```
 
 c) From where did the ship with the most immigrants arrive? [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+which.max(immigration_ellis$Count)
+immigration_ellis$Port[17716]
 ```
 
 d) How many unique ships (according to the name) are in the dataset? [1 point]
 
 ```{r}
-# ENTER YOUR CODE HERE
+length(unique(immigration_ellis$Ship))
 ```
 
 e) Find out the name of the package from the tidyverse that makes working with date and times data easier, and report it below! [1 point]
 
 <div style="color:blue">
-ENTER YOUR ANSWER HERE.
+lubridate.
 </div>
 
 
