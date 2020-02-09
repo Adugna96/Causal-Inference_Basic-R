@@ -100,8 +100,7 @@ length(immigration_ellis$Count)
 c) From where did the ship with the most immigrants arrive? [1 point]
 
 ```{r}
-which.max(immigration_ellis$Count)
-immigration_ellis$Port[17716]
+immigration_ellis$Port[which.max(immigration_ellis$Count)]
 ```
 
 d) How many unique ships (according to the name) are in the dataset? [1 point]
