@@ -1,0 +1,32 @@
+---
+title: "Reviewer Feedback Form, Assignment 1"
+output: github_document
+params:
+  q1_score: [3]
+  q2_score: [4]
+  q3_score: [4]
+---
+
+
+## Instructions
+
+Enter your feedback for each question below. Please replace `[INSERT SCORE]` in the `q*_score` fields in the YAML with the scores you give the author for each question.
+
+Please keep your review comments constructive and professional.
+
+## Feedback
+
+#### 1. Place Question 1 text here. [max. 3 points]
+
+Great job on this one. For calculating the strandard deviation in 1b, you can use the formula sd(x, na.rm = TRUE) instead of taking the sqrt of the variance. Both methods work though.
+
+#### 2. Place Question 2 text here. [max. 4 points]
+
+All is correct, great job.
+
+#### 3. Place Question 3 text here. [max. 5 points]
+
+3a. I believe you made an error when loading the data. Instead of using read.delim(file='immigration-ellis.tsv'), you could have used read_tsv("immigration-ellis.tsv"). I won't take off a point since you were still able to use the data.
+
+3b. Minus 1 point. The function length() gives you the length of the vector, not the total amount of counts. Instead, you should have used sum(immigration_ellis$Count, na.rm = TRUE) to find the number of immigration cases in the data set.
+
