@@ -1,19 +1,14 @@
----
-title: "Author rating form"
-output: github_document
-params:
-  accuracy: 4
-  helpfulness: 4
----
+Author rating form
+================
 
-
-## Instructions
+Instructions
+------------
 
 Please rate the reviewer's feedback based on the categories below on a scale from "Strongly disagree" to "Strongly agree." Please replace `[INSERT SCORE]` in the `accuracy` and `helpfulness` fields in the YAML with the scores you give the reviewer for each category.
 
-1. `accuracy`: "The reviewer's assessment accurately describes the quality of my work." [max. 4 points]
+1.  `accuracy`: "The reviewer's assessment accurately describes the quality of my work." \[max. 4 points\]
 
-2. `helpfulness`: "The reviewer's feedback was constructive and helpful."  [max. 4 points]
+2.  `helpfulness`: "The reviewer's feedback was constructive and helpful." \[max. 4 points\]
 
 | Score | Rating            |
 |-------|-------------------|
@@ -21,5 +16,3 @@ Please rate the reviewer's feedback based on the categories below on a scale fro
 | 2     | Disagree          |
 | 3     | Agree             |
 | 4     | Strongly agree    |
-
-

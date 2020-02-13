@@ -2,8 +2,8 @@
 title: "Author rating form"
 output: github_document
 params:
-  accuracy: [INSERT SCORE]
-  helpfulness: [INSERT SCORE]
+  accuracy: 4
+  helpfulness: 4
 ---
 
 
